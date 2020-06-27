@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACIA,UAAU;EACN,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,4BAA4B,CAAC,kBAAkB;;;AAGxD,UAAU;EACN,WAAW,EAAE,WAAW;EACxB,GAAG,EAAE,yBAAyB,CAAC,kBAAkB;;;AAGrD,UAAU;EACN,WAAW,EAAE,mBAAmB;EAChC,GAAG,EAAE,sCAAsC,CAAC,kBAAkB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/abstracts/_fonts.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
