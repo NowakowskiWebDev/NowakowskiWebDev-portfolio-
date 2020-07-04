@@ -1,0 +1,51 @@
+.about-me {
+    padding: 2rem;
+    @include flexCenter;
+
+    &__text-box {
+        letter-spacing: 1px;
+    }
+
+    &__background-box {
+        text-align: center;
+        width: 10rem;
+        border: 2px solid black;
+        padding: 1rem;
+        position: relative;
+        height: 5rem;
+
+        .background {
+            width: 100%;
+            height: 5rem;
+            background-color: blue;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            z-index: -1;
+        }
+    }
+
+    &__text {
+        display: block;
+        margin: 2rem 0;
+
+        &:nth-child(n + 1):not(.about-me__text:first-child) {
+            margin: 0 0 2rem;
+        }
+
+        &--background {
+            margin: 0;
+            font-size: 2rem;
+            font-family: 'Lato-Bold';
+            color: $color-white;
+        }
+    }
+
+    &__stack-box {
+        text-align: center;
+    }
+
+    &__stack {
+        display: block;
+    }
+}

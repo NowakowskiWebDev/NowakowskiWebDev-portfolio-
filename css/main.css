@@ -74,7 +74,7 @@ html {
   height: 4px;
   background-color: white;
   position: absolute;
-  background-color: #fff;
+  background-color: red;
   content: '';
   left: 0;
 }
@@ -87,7 +87,7 @@ html {
   border: 0;
   margin: 0;
   outline: none;
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 1rem;
 }
@@ -108,7 +108,7 @@ html {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #fff;
+  background-color: red;
 }
 
 .hamburger__inner::before {
@@ -163,5 +163,65 @@ html {
           transform: translateY(-10px);
   -webkit-animation: arrowHeader ease infinite alternate .6s;
           animation: arrowHeader ease infinite alternate .6s;
+}
+
+.about-me {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me__text-box {
+  letter-spacing: 1px;
+}
+
+.about-me__background-box {
+  text-align: center;
+  width: 10rem;
+  border: 2px solid black;
+  padding: 1rem;
+  position: relative;
+  height: 5rem;
+}
+
+.about-me__background-box .background {
+  width: 100%;
+  height: 5rem;
+  background-color: blue;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: -1;
+}
+
+.about-me__text {
+  display: block;
+  margin: 2rem 0;
+}
+
+.about-me__text:nth-child(n + 1):not(.about-me__text:first-child) {
+  margin: 0 0 2rem;
+}
+
+.about-me__text--background {
+  margin: 0;
+  font-size: 2rem;
+  font-family: 'Lato-Bold';
+  color: #fff;
+}
+
+.about-me__stack-box {
+  text-align: center;
+}
+
+.about-me__stack {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
