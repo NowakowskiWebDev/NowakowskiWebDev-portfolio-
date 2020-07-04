@@ -1,0 +1,50 @@
+%basicBeforeAfter {
+    @include hamburger-line;
+    background-color: $color-white;
+    content: '';
+    left: 0;
+}
+
+.hamburger {
+    padding: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    outline: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+
+    &__box {
+        width: 3.5rem;
+        height: 2.4rem;
+        display: inline-block;
+        position: relative;
+
+    }
+
+    &__inner {
+        @include hamburger-line;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $color-white;
+
+        &::before,
+        &::after {
+            @extend %basicBeforeAfter;
+        }
+
+        &::before {
+            top: 1rem;
+        }
+
+        &::after {
+            top: -1rem;
+        }
+    }
+
+
+}
