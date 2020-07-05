@@ -184,7 +184,7 @@ html {
 
 .about-me__background-box {
   text-align: center;
-  width: 15rem;
+  width: 10rem;
   border: 2px solid black;
   padding: 1rem;
   position: relative;
@@ -223,5 +223,76 @@ html {
 
 .about-me__stack {
   display: block;
+}
+
+.projects {
+  min-height: 100vh;
+  background-color: turquoise;
+  padding: 2rem 1rem;
+}
+
+.projects__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.projects__box {
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background: #fff;
+}
+
+.projects__box--what-next {
+  font-size: 2rem;
+}
+
+.projects__heading-tertiary {
+  margin-top: 2rem;
+  font-family: 'Lato-Bold';
+  color: turquoise;
+  padding: 1rem;
+}
+
+.projects__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.description-box {
+  background: #fff;
+  padding: 1rem;
+  margin: 0;
+}
+
+.description-box__paragraph {
+  color: turquoise;
+  font-size: 1.2rem;
+  font-family: 'Lato-Bold';
+  padding: 1rem;
+}
+
+.description-box__link {
+  border: 1px solid turquoise;
+  border-radius: 10px;
+  color: turquoise;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.description-box__link--live {
+  margin-right: 4rem;
+}
+
+.description-last-box__list {
+  text-align: left;
+  padding: 2rem;
+}
+
+.description-last-box__item {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */

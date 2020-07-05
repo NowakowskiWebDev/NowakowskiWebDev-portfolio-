@@ -1,0 +1,76 @@
+.projects {
+    min-height: 100vh;
+    background-color: turquoise;
+    padding: 2rem 1rem;
+
+    &__heading {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $color-white;
+    }
+
+    &__box {
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        background: $color-white;
+
+
+        &--what-next {
+            font-size: 2rem;
+        }
+    }
+
+    &__heading-tertiary {
+        margin-top: 2rem;
+        font-family: 'Lato-Bold';
+        color: turquoise;
+        padding: 1rem;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.description-box {
+    background: $color-white;
+    padding: 1rem;
+    margin: 0;
+
+    &__paragraph {
+        color: turquoise;
+        font-size: 1.2rem;
+        font-family: 'Lato-Bold';
+        padding: 1rem;
+    }
+
+    &__link {
+        border: 1px solid turquoise;
+        border-radius: 10px;
+        color: turquoise;
+        display: inline-block;
+        padding: 1rem;
+
+        &--live {
+            margin-right: 4rem;
+        }
+
+        &--code {}
+    }
+}
+
+.description-last-box {
+
+    &__list {
+        text-align: left;
+        padding: 2rem;
+    }
+
+    &__item {
+        margin: 1rem 0;
+    }
+}

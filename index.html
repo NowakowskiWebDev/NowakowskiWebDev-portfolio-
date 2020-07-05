@@ -70,11 +70,91 @@
                 </p>
             </div>
         </section>
-        <section class="stack"></section>
-        <section class="project"></section>
+        <section class="projects">
+            <h2 class="projects__heading">Moje projekty</h2>
+            <div class="projects__box first-projects">
+                <h3 class="projects__heading-tertiary">Pyszotka- cukiernia</h3>
+                <img loading="lazy" class="projects__img"
+                    srcset="img/pyszotka-640.jpg 640w, img/pyszotka-1280.jpg 1280w, img/pyszotka-1662.jpg 1620w"
+                    sizes="(max-width: 600px) 600px, (max-width: 1200px) 900px, (max-width: 1800px) 1200px"
+                    alt="Pyszotka- cukiernia z tradycjami">
+                <div class="description-box">
+                    <p class="description-box__paragraph">HTML5 / SASS</p>
+                    <a class="description-box__link description-box__link--live" href="">Live</a>
+                    <a class="description-box__link description-box__link--code" href="">Code</a>
+                </div>
+            </div>
+            <div class="projects__box seconds-projects">
+                <h3 class="projects__heading-tertiary">Eskapady- biuro podróży</h3>
+                <img loading="lazy" class="projects__img"
+                    srcset="img/eskapady-640.jpg 640w, img/eskapady-1280.jpg 1280w, img/eskapady-1662.jpg 1620w"
+                    sizes="(max-width: 600px) 600px, (max-width: 1200px) 900px, (max-width: 1800px) 1200px"
+                    alt="Eskapady- najlepsze biuro podróży">
+                <div class="description-box">
+                    <p class="description-box__paragraph">HTML5 / SASS</p>
+                    <a class="description-box__link description-box__link--live" href="">Live</a>
+                    <a class="description-box__link description-box__link--code" href="">Code</a>
+                </div>
+            </div>
+            <div class="projects__box third-projects">
+                <h3 class="projects__heading-tertiary">Portfolio</h3>
+                <img loading="lazy" class="projects__img"
+                    srcset="img/underConstructions-640.png 640w, img/underConstructions-1280.png 1280w, img/underConstructions-1920.png 1920w"
+                    sizes="(max-width: 600px) 600px, (max-width: 1200px) 900px, (max-width: 1800px) 1200px"
+                    alt="Strona w budowie">
+                <div class="description-box">
+                    <p class="description-box__paragraph">HTML5 / SASS / JavaScript</p>
+                    <a class="description-box__link description-box__link--live" href="">Live</a>
+                    <a class="description-box__link description-box__link--code" href="">Code</a>
+                </div>
+            </div>
+            <div class="projects__box projects__box--what-next">
+                <h3 class="projects__heading-tertiary">Co dalej?</h3>
+                <img loading="lazy" class="projects__img"
+                    srcset="img/underConstructions-640.png 640w, img/underConstructions-1280.png 1280w, img/underConstructions-1920.png 1920w"
+                    sizes="(max-width: 600px) 600px, (max-width: 1200px) 900px, (max-width: 1800px) 1200px"
+                    alt="Strona w budowie">
+                <div class="description-last-box">
+                    <p class="description-last-box__paragraph">Następne projekty które chce wykonać:
+                    </p>
+                    <ul class="description-last-box__list">
+                        <li class="description-last-box__item">Gra internetowa - z użyciem JavaScript</li>
+                        <li class="description-last-box__item">Strona internetowa - z użyciem React</li>
+                        <li class="description-last-box__item">Strona internetowa - z użyciem Gatsby</li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="book__form">
+                <form action="#" class="form">
+                    <h3 class="contact__heading-tertiary">Napisz do mnie</h3>
+                    <div class="form__group">
+                        <label class="form__label" for="name">Email</label>
+                        <input id="name" type="email" class="form__input" placeholder="Email">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="textarea"></label>
+                        <textarea id="textarea" rows="5" cols="30" placeholder="Wiadomość..."></textarea>
+                    </div>
+                    <div class="form__group">
+                        <button class="btn btn--form">Wyślij!</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <p class="footer__paragraph">nowakowskiwebdev@gmail.com</p>
+        <ul class="footer__social-list">
+            <li class="footer__social-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            <li class="footer__social-item"><a href="#"><i class="fab fa-github-square"></i></a></li>
+            <li class="footer__social-item"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        </ul>
+        <p class="footer__copy">&copy; 2020, <span class="fullname">Łukasz Nowakowski</span></p>
+    </footer>
 
 
     </div>
