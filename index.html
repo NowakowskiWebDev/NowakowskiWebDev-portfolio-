@@ -15,32 +15,35 @@
 <body>
     <script defer src="scripts/script.js"></script>
     <header class="header">
+        <p class="header__full-name" id="fullName">Łukasz Nowakowski</p>
 
-
-        <button class="hamburger">
+        <button class="hamburger" id="hamburger">
             <span class="hamburger__box">
                     <span class="hamburger__inner"></span>
             </span>
         </button>
-        <!-- <nav class="navigation">
-            <div class="navigation-box" style="display: none;">
-                    <ul class="navigation__list">
-                        <li class="navigation__item"><a href="">O mnie</a></li>
-                        <li class="navigation__item"><a href="">Technologie</a></li>
-                        <li class="navigation__item"><a href="">Projekty</a></li>
-                        <li class="navigation__item"><a href="">Kontakt</a></li>
-                    </ul>
-                </div>
-        </nav> -->
+        <nav class="navigation" id="navigation">
+            <div class="navigation__box">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#about-me">O mnie</a></li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#projects">Projekty</a></li>
+                    <li class="navigation__item">
+                        <a class="navigation__link" href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="header__text-box">
+
             <h1 class="heading">
                 <span class="heading__main">Łukasz Nowakowski</span>
-                <span class="heading__sub">Junior Front-End Developer</span>
+                <span class="heading__sub">Junior <span class="heading__front">Front-End Developer</span></span>
             </h1>
         </div>
         <div class="header__arrow">
             <a href="#main"><svg class="path" xmlns="http://www.w3.org/2000/svg" width="500" height="100" viewBox="-80 0 600 300">
-                <path fill="#fff" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
+                <path fill="white" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
             </svg></a>
         </div>
 
@@ -48,7 +51,7 @@
     </header>
 
     <main class="main" id="main">
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="about-me__text-box">
                 <div class="about-me__background-box">
                     <div class="background"></div>
@@ -70,7 +73,7 @@
                 </p>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="projects__heading">Moje projekty</h2>
             <div class="projects__box first-projects">
                 <h3 class="projects__heading-tertiary">Pyszotka- cukiernia</h3>
@@ -126,7 +129,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="book__form">
                 <form action="#" class="form">
                     <h3 class="contact__heading-tertiary">Napisz do mnie</h3>
@@ -146,7 +149,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <p class="footer__paragraph">nowakowskiwebdev@gmail.com</p>
         <ul class="footer__social-list">
             <li class="footer__social-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>

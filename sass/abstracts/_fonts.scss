@@ -1,6 +1,8 @@
 // font-family: 'Lato-Regular';
 // font-family: 'Lato-Bold';
 // font-family: 'Courgette-Regular';
+// font-family: 'Pacifico-Regular';
+
 
 @font-face {
     font-family: 'Lato-Regular';
@@ -15,4 +17,10 @@
 @font-face {
     font-family: 'Courgette-Regular';
     src: url('Courgette/Courgette-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url('Pacifico-Regular/Pacifico-Regular.ttf') format('truetype');
 }
