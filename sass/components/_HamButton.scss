@@ -52,5 +52,18 @@
     &--active {
         position: fixed;
     }
+}
 
+.hamburger--active .hamburger__inner {
+    background: transparent;
+}
+
+.hamburger--active .hamburger__inner:before {
+    transform-origin: 50%;
+    animation: burgerChangeOne .5s ease-in-out forwards;
+}
+
+.hamburger--active .hamburger__inner:after {
+    transform-origin: 50%;
+    animation: burgerChangeTwo .5s ease-in-out forwards;
 }
