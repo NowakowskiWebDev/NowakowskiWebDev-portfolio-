@@ -19,8 +19,11 @@
     top: 1rem;
     right: 1rem;
 
+    opacity: 0;
+    animation: slowShowInHeader 3s linear forwards;
+
     &__box {
-        width: 3.5rem;
+        width: 3rem;
         height: 2.4rem;
         display: inline-block;
         position: relative;
@@ -59,11 +62,13 @@
 }
 
 .hamburger--active .hamburger__inner:before {
+    border-radius: 20px;
     transform-origin: 50%;
     animation: burgerChangeOne .5s ease-in-out forwards;
 }
 
 .hamburger--active .hamburger__inner:after {
+    border-radius: 20px;
     transform-origin: 50%;
     animation: burgerChangeTwo .5s ease-in-out forwards;
 }

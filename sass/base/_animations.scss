@@ -1,9 +1,11 @@
 @keyframes arrowHeader {
     0% {
+        opacity: 1;
         transform: translateY(-10px);
     }
 
     100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -19,9 +21,14 @@
         transform: rotate(0);
     }
 
+    51% {
+        background-color: $color-white;
+    }
+
     100% {
         top: 0;
         transform: rotate(45deg);
+        background-color: #0A2472;
     }
 }
 
@@ -33,11 +40,17 @@
     50% {
         top: 0;
         transform: rotate(0);
+
+    }
+
+    51% {
+        background-color: $color-white;
     }
 
     100% {
         top: 0;
         transform: rotate(135deg);
+        background-color: #0A2472;
     }
 }
 
@@ -47,6 +60,7 @@
     }
 
     50% {
+
         transform: translateX(20px);
     }
 
@@ -55,4 +69,36 @@
     }
 
 
+}
+
+@keyframes slowShowInHeader {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes jumpToUp {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
