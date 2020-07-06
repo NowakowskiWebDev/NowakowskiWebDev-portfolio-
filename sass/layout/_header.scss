@@ -71,6 +71,7 @@
 .path {
     height: 4rem;
     width: 4rem;
+    transform: translateY(-10px);
     opacity: 0;
-    animation: slowShowInHeader 3s linear forwards;
+    animation: arrowHeader .6s 2.5s ease infinite alternate;
 }

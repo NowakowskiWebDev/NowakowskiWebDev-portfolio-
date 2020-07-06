@@ -470,9 +470,11 @@ html {
 .path {
   height: 4rem;
   width: 4rem;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
   opacity: 0;
-  -webkit-animation: slowShowInHeader 3s linear forwards;
-          animation: slowShowInHeader 3s linear forwards;
+  -webkit-animation: arrowHeader .6s 2.5s ease infinite alternate;
+          animation: arrowHeader .6s 2.5s ease infinite alternate;
 }
 
 .about-me {
