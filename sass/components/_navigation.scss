@@ -40,3 +40,15 @@
 .navigation.navigation--active {
     transform: translateX(0);
 }
+
+.navigation--active .navigation__item:nth-child(1) {
+    animation: linkMoveToRight .5s .1s ease-in-out;
+}
+
+.navigation--active .navigation__item:nth-child(2) {
+    animation: linkMoveToRight .5s .2s ease-in-out;
+}
+
+.navigation--active .navigation__item:nth-child(3) {
+    animation: linkMoveToRight .5s .3s ease-in-out;
+}
