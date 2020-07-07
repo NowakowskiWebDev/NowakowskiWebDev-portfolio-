@@ -494,7 +494,7 @@ html {
 }
 
 .about-me {
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,8 +525,6 @@ html {
 .about-me__background-box .background {
   width: 100%;
   height: 5rem;
-  background-color: #0A2472;
-  background-color: #A6E1FA;
   background-color: #0E6BA8;
   position: absolute;
   top: 8px;
@@ -561,7 +559,7 @@ html {
   font-size: 2rem;
   padding: 2rem 0 1rem;
   font-family: 'Courgette-Regular';
-  border-top: 2px solid #0A2472;
+  border-top: 2px dashed #0A2472;
 }
 
 .about-me__stack {
@@ -572,14 +570,64 @@ html {
 
 .projects {
   min-height: 100vh;
-  background-color: turquoise;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-.projects__heading {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #fff;
+.projects__heading-box {
+  width: 100%;
+  position: relative;
+}
+
+.projects__heading-box::after {
+  content: '';
+  background-color: #333;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+.projects__heading-secondary {
+  font-size: 2rem;
+  color: black;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  z-index: 1;
+  border: 2px solid #0A2472;
+  border: 2px solid #333;
+  padding: .5rem 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.projects__heading-secondary::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 5%;
+  width: 45%;
+  height: 10px;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.projects__heading-secondary::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  right: 5%;
+  width: 45%;
+  height: 10px;
+  background-color: #fff;
+  z-index: 100;
 }
 
 .projects__box {
