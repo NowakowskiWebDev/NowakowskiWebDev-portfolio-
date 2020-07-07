@@ -53,6 +53,19 @@
     <main class="main" id="main">
         <section class="about-me" id="about-me">
             <div class="about-me__text-box">
+                <svg class="about-me__shape" width="300" height="300" viewBox="0 0 200 200"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="shape-gradient" x2="0.35" y2="1">
+                            <stop offset="0%" stop-color="var(--color-stop)" />
+                            <stop offset="30%" stop-color="var(--color-stop)" />
+                            <stop offset="100%" stop-color="var(--color-bot)" />
+                        </linearGradient>
+                    </defs>
+                    <path class="round-shape" fill="#FF0066"
+                        d="M41.2,-63.4C49.4,-50.8,49.2,-33.4,55.3,-17.3C61.5,-1.2,74,13.4,74.4,27.9C74.8,42.3,63,56.4,48.6,64.9C34.2,73.4,17.1,76.1,0.7,75.2C-15.8,74.3,-31.6,69.7,-47.3,61.7C-63,53.7,-78.6,42.1,-81.6,27.7C-84.6,13.3,-75,-3.9,-67,-19.7C-59,-35.5,-52.7,-49.7,-41.8,-61.4C-31,-73.2,-15.5,-82.4,0.5,-83.2C16.5,-83.9,33.1,-76.1,41.2,-63.4Z"
+                        transform="translate(100 100)" />
+                </svg>
                 <div class="about-me__background-box">
                     <div class="background"></div>
                     <p class="about-me__text about-me__text--background">Cześć!</p>
@@ -68,9 +81,11 @@
                 <p class="about-me__text">
                     Początkujący programista który traktuje programowanie jako zabawę i wyzwanie.
                 </p>
-                <p class="about-me__stack-box">Mój stack technologiczny
-                    <span class="about-me__stack">HTML / CSS / SASS / JavaScript / GIT / NPM / Webpack / ReactJS / React Native / Redux / Gatsby</span>
-                </p>
+                <div class="about-me__stack-box">
+                    <h3 class="about-me___heading-tertiary">Mój stack technologiczny</h3>
+                    <p class="about-me__stack">HTML5 / CSS3 / SASS / JavaScript / GIT / NPM / Webpack / ReactJS / React
+                        Native / Redux / Gatsby</p>
+                </div>
             </div>
         </section>
         <section class="projects" id="projects">

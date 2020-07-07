@@ -1,0 +1,15 @@
+.about-me__shape {
+    position: absolute;
+    top: 250px;
+    right: -150px;
+    z-index: -1;
+}
+
+.round-shape {
+    fill: url(#shape-gradient) #fff;
+}
+
+#shape-gradient {
+    --color-stop: #A6E1FA;
+    --color-bot: #0E6BA8;
+}

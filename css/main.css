@@ -293,17 +293,17 @@ html {
           transform: translateX(0);
 }
 
-.navigation--active .navigation__item:nth-child(1) {
+.navigation .navigation--active .navigation__item:nth-child(1) {
   -webkit-animation: linkMoveToRight .5s .1s ease-in-out;
           animation: linkMoveToRight .5s .1s ease-in-out;
 }
 
-.navigation--active .navigation__item:nth-child(2) {
+.navigation .navigation--active .navigation__item:nth-child(2) {
   -webkit-animation: linkMoveToRight .5s .2s ease-in-out;
           animation: linkMoveToRight .5s .2s ease-in-out;
 }
 
-.navigation--active .navigation__item:nth-child(3) {
+.navigation .navigation--active .navigation__item:nth-child(3) {
   -webkit-animation: linkMoveToRight .5s .3s ease-in-out;
           animation: linkMoveToRight .5s .3s ease-in-out;
 }
@@ -384,6 +384,22 @@ html {
           transform-origin: 50%;
   -webkit-animation: burgerChangeTwo .5s ease-in-out forwards;
           animation: burgerChangeTwo .5s ease-in-out forwards;
+}
+
+.about-me__shape {
+  position: absolute;
+  top: 250px;
+  right: -150px;
+  z-index: -1;
+}
+
+.round-shape {
+  fill: url(#shape-gradient) #fff;
+}
+
+#shape-gradient {
+  --color-stop: #A6E1FA;
+  --color-bot: #0E6BA8;
 }
 
 .header {
@@ -478,7 +494,7 @@ html {
 }
 
 .about-me {
-  padding: 2rem;
+  padding: 2rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,16 +504,19 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .about-me__text-box {
   letter-spacing: 1px;
+  line-height: 180%;
 }
 
 .about-me__background-box {
   text-align: center;
   width: 10rem;
-  border: 2px solid black;
+  border: 2px solid #333;
   padding: 1rem;
   position: relative;
   height: 5rem;
@@ -506,16 +525,21 @@ html {
 .about-me__background-box .background {
   width: 100%;
   height: 5rem;
-  background-color: blue;
+  background-color: #0A2472;
+  background-color: #A6E1FA;
+  background-color: #0E6BA8;
   position: absolute;
   top: 8px;
   left: 8px;
   z-index: -1;
+  color: #0A2472;
 }
 
 .about-me__text {
   display: block;
   margin: 2rem 0;
+  font-size: 1.8rem;
+  color: #333;
 }
 
 .about-me__text:nth-child(n + 1):not(.about-me__text:first-child) {
@@ -533,8 +557,17 @@ html {
   text-align: center;
 }
 
+.about-me___heading-tertiary {
+  font-size: 2rem;
+  padding: 2rem 0 1rem;
+  font-family: 'Courgette-Regular';
+  border-top: 2px solid #0A2472;
+}
+
 .about-me__stack {
   display: block;
+  color: #0A2472;
+  font-family: 'Lato-Bold';
 }
 
 .projects {

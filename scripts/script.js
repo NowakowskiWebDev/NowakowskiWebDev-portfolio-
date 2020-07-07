@@ -5,6 +5,7 @@ const navigationLinks = document.querySelectorAll('.navigation__link');
 
 
 const handleCLick = () => {
+    console.log('siema')
     hamburger.classList.toggle('hamburger--active');
     nav.classList.toggle('navigation--active');
     fullName.classList.toggle('header__full-name--active')
@@ -15,10 +16,38 @@ hamburger.addEventListener('click', handleCLick)
 nav.addEventListener('click',
     navigationLinks.forEach(link => {
         link.addEventListener('click', handleCLick)
-
     })
 )
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Scroll function
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function () {
         console.log(smoothScroll)
