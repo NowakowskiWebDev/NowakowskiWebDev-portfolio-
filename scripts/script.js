@@ -46,7 +46,6 @@ nav.addEventListener('click',
 
 
 
-
 // Scroll function
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function () {

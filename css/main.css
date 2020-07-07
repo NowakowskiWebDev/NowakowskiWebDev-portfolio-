@@ -293,17 +293,17 @@ html {
           transform: translateX(0);
 }
 
-.navigation .navigation--active .navigation__item:nth-child(1) {
+.navigation--active .navigation__item:nth-child(1) {
   -webkit-animation: linkMoveToRight .5s .1s ease-in-out;
           animation: linkMoveToRight .5s .1s ease-in-out;
 }
 
-.navigation .navigation--active .navigation__item:nth-child(2) {
+.navigation--active .navigation__item:nth-child(2) {
   -webkit-animation: linkMoveToRight .5s .2s ease-in-out;
           animation: linkMoveToRight .5s .2s ease-in-out;
 }
 
-.navigation .navigation--active .navigation__item:nth-child(3) {
+.navigation--active .navigation__item:nth-child(3) {
   -webkit-animation: linkMoveToRight .5s .3s ease-in-out;
           animation: linkMoveToRight .5s .3s ease-in-out;
 }
