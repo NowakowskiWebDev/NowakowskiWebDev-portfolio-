@@ -402,6 +402,20 @@ html {
   --color-bot: #0E6BA8;
 }
 
+.slide-in {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.slide-in.active {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -570,7 +584,7 @@ html {
 
 .projects {
   min-height: 100vh;
-  padding: 7rem 0;
+  padding: 7rem 0 3rem;
   text-align: center;
   background-color: #FFFDE1;
   position: relative;
@@ -585,6 +599,8 @@ html {
 .projects__box--what-next {
   font-size: 2rem;
   color: inherit;
+  margin: 1rem;
+  border: 5px solid dashed;
 }
 
 .projects__img {
@@ -704,19 +720,5 @@ html {
 .description-last-box__item {
   margin: 1rem 0;
   color: inherit;
-}
-
-.slide-in {
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
-  opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
-  transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
-}
-
-.slide-in.active {
-  opacity: 1;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
 }
 /*# sourceMappingURL=main.css.map */

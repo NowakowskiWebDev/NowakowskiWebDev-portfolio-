@@ -1,6 +1,6 @@
 .projects {
     min-height: 100vh;
-    padding: 7rem 0;
+    padding: 7rem 0 3rem;
     text-align: center;
     background-color: $color-beige-background;
     position: relative;
@@ -13,6 +13,8 @@
         &--what-next {
             font-size: 2rem;
             color: inherit;
+            margin: 1rem;
+            border: 5px solid dashed;
         }
     }
 

@@ -8,21 +8,10 @@
 @import 'components/navigation';
 @import 'components/ham-button';
 @import 'components/round-shape';
+@import 'components/slide-in';
 
 @import 'layout/header';
 @import 'layout/about-me';
 @import 'layout/projects';
 @import 'layout/contact';
 @import 'layout/footer';
-
-
-.slide-in {
-    transform: translateY(30px);
-    opacity: 0;
-    transition: all .6s cubic-bezier(.39, .575, .565, 1)
-}
-
-.slide-in.active {
-    opacity: 1;
-    transform: translateY(0%);
-}
