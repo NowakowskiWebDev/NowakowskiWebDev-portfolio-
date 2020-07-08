@@ -1,3 +1,4 @@
+// Hamburger script
 const hamburger = document.querySelector('#hamburger');
 const nav = document.querySelector('#navigation');
 const fullName = document.querySelector('#fullName');
@@ -13,11 +14,54 @@ const handleCLick = () => {
 
 hamburger.addEventListener('click', handleCLick)
 
+// Mobile navigation script
 nav.addEventListener('click',
     navigationLinks.forEach(link => {
         link.addEventListener('click', handleCLick)
     })
 )
+
+// Moving projects
+function debounce(func, wait = 20, immediate = true) {
+    var timeout;
+    return function () {
+        var context = this,
+            args = arguments;
+        var later = function () {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+};
+
+const sliderProjects = document.querySelectorAll('.projects__box');
+
+function checkSlide() {
+    sliderProjects.forEach(sliderProject => {
+        const heightProject = sliderProject.getBoundingClientRect().height;
+
+        // 0,2 *height way through the project
+        const slideInAt = (window.scrollY + window.innerHeight) - heightProject * 0.2;
+        // bottom of the project
+        const projectBottom = sliderProject.getBoundingClientRect().top + window.scrollY + heightProject;
+        const isHalfShown = slideInAt > sliderProject.getBoundingClientRect().top + window.scrollY;
+        // +30 because project-box is tranform by 30px
+        const isNotScrolledPast = window.scrollY < projectBottom + 30;
+        if (isHalfShown && isNotScrolledPast) {
+            sliderProject.classList.add('active');
+        } else {
+            sliderProject.classList.remove('active');
+        }
+    });
+}
+
+
+window.addEventListener('scroll', debounce(checkSlide));
+
 
 
 
