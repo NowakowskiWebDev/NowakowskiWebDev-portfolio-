@@ -167,6 +167,10 @@
             transform: translateX(-50%);
             background-color: $color-gray-444;
 
+            @media screen and (orientation: landscape) and (max-width: 599px) {
+                width: 25%;
+            }
+
         }
     }
 

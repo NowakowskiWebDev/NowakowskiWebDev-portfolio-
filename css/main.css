@@ -23,6 +23,13 @@
   src: url("Raleway-Bold/Raleway-Bold.ttf") format("truetype");
 }
 
+/*
+MEDIA QUERY
+0 - 599px;      Phone
+600 - 899px;    Tablet portrait
+900 - 1199px;   Tablet landscape
+1200px +;       Desktop
+*/
 @-webkit-keyframes arrowHeader {
   0% {
     opacity: 1;
@@ -35,7 +42,6 @@
             transform: translateY(0);
   }
 }
-
 @keyframes arrowHeader {
   0% {
     opacity: 1;
@@ -280,6 +286,12 @@ html {
 
 .navigation__item {
   margin: 10rem;
+}
+
+@media screen and (orientation: landscape) and (max-width: 599px) {
+  .navigation__item {
+    margin: 7rem;
+  }
 }
 
 .navigation__link {
@@ -808,6 +820,12 @@ html {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   background-color: #444;
+}
+
+@media screen and (orientation: landscape) and (max-width: 599px) {
+  .last-box__item::after {
+    width: 25%;
+  }
 }
 
 .contact {
