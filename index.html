@@ -135,36 +135,44 @@
                     <a class="description-box__link description-box__link--code" href="">Code <i class="fas fa-caret-right"></i></a>
                 </div>
             </div>
-            <div class="slide-in projects__box projects__box--what-next">
-                <h3 class="projects__heading-tertiary">Co dalej?</h3>
-                <div class="description-last-box">
-                    <p class="description-last-box__paragraph">Następne projekty które chce wykonać:
-                    </p>
-                    <ul class="description-last-box__list">
-                        <li class="description-last-box__item">Gra internetowa lub Aplikacja internetowa - z użyciem
+            <div class="slide-in projects__box last-box">
+                <h3 class="last-box__heading-tertiary">Następne projekty które chce wykonać:</h3>
+                <div class="last-box__description">
+                    <ul class="last-box__list">
+                        <li class="last-box__item">Gra internetowa lub Aplikacja internetowa - z użyciem
                             JavaScript</li>
-                        <li class="description-last-box__item">Strona internetowa - z użyciem React</li>
-                        <li class="description-last-box__item">Strona internetowa - z użyciem Gatsby</li>
+                        <li class="last-box__item">Strona internetowa - z użyciem React</li>
+                        <li class="last-box__item">Strona internetowa - z użyciem Gatsby</li>
                     </ul>
-                    <p>Dodatkowo zamierzam poznawać dalsze technologię oraz rozwijać się w tych które już znam.</p>
-
+                    <p class="last-box__paragraph">Dodatkowo zamierzam poznawać dalsze technologię oraz rozwijać się w
+                        tych które już znam.</p>
                 </div>
             </div>
+            <svg class="projects__wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#FFFDE1" fill-opacity="1"
+                    d="M0,128L80,112C160,96,320,64,480,96C640,128,800,224,960,256C1120,288,1280,256,1360,240L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
         </section>
         <section class="contact" id="contact">
             <div class="book__form">
+                <h3 class="contact__heading-tertiary">Zapraszam do kontaktu</h3>
                 <form action="#" class="form">
-                    <h3 class="contact__heading-tertiary">Napisz do mnie</h3>
                     <div class="form__group">
-                        <label class="form__label" for="name">Email</label>
+                        <input id="name" type="text" class="form__input" placeholder="Imię i nazwisko">
+                        <label class="form__label" for="name">Imię i nazwisko</label>
+                    </div>
+                    <div class="form__group">
                         <input id="name" type="email" class="form__input" placeholder="Email">
+                        <label class="form__label" for="email">Email</label>
                     </div>
                     <div class="form__group">
-                        <label class="form__label" for="textarea"></label>
-                        <textarea id="textarea" rows="5" cols="30" placeholder="Wiadomość..."></textarea>
+                        <textarea class="form__textarea" id="textarea" rows="5" cols="20"
+                            placeholder="Wiadomość..."></textarea>
+                        <label class="form__label" for="textarea">Wiadomość</label>
                     </div>
                     <div class="form__group">
-                        <button class="btn btn--form">Wyślij!</button>
+                        <button type="submit" class="btn btn--form">Wyślij!</button>
                     </div>
                 </form>
             </div>

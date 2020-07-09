@@ -18,6 +18,11 @@
   src: url("Pacifico-Regular/Pacifico-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url("Raleway-Bold/Raleway-Bold.ttf") format("truetype");
+}
+
 @-webkit-keyframes arrowHeader {
   0% {
     opacity: 1;
@@ -402,6 +407,65 @@ html {
   --color-bot: #0E6BA8;
 }
 
+.form__input, .form__textarea {
+  font-size: 1.4rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid #e6e6e6;
+  width: 100%;
+  color: #444;
+}
+
+.form__group:not(:last-child) {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-family: "Lato-Bold";
+  text-transform: uppercase;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  opacity: 1;
+  position: absolute;
+  top: -2rem;
+  left: 1.8rem;
+}
+
+.form__input:placeholder-shown + .form__label,
+.form__textarea:placeholder-shown + .form__label {
+  opacity: 0;
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  color: #444;
+}
+
+.form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.form__input::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.form__textarea:focus {
+  outline: none;
+}
+
+.form .btn--form, .form .btn--form:visited {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  font-family: 'Raleway-Bold';
+  background-color: #444;
+  width: 100%;
+  color: #fff;
+}
+
 .slide-in {
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
@@ -584,23 +648,16 @@ html {
 
 .projects {
   min-height: 100vh;
-  padding: 7rem 0 3rem;
+  padding: 7rem 0 5rem;
   text-align: center;
   background-color: #FFFDE1;
   position: relative;
-  color: #333;
+  color: #444;
 }
 
 .projects__box {
   text-align: center;
   margin: 0 0 7rem;
-}
-
-.projects__box--what-next {
-  font-size: 2rem;
-  color: inherit;
-  margin: 1rem;
-  border: 5px solid dashed;
 }
 
 .projects__img {
@@ -609,6 +666,15 @@ html {
   display: block;
   margin: 0;
   padding: 0;
+}
+
+.projects__wave {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: -1000;
 }
 
 .projects__heading-box {
@@ -621,7 +687,6 @@ html {
 
 .projects__heading-box::after {
   content: '';
-  background-color: #777;
   width: 100%;
   height: 50%;
   z-index: 1;
@@ -711,14 +776,68 @@ html {
   color: inherit;
 }
 
-.description-last-box__list {
+.last-box {
+  font-size: 2rem;
+  color: #333;
+  margin: 0 2rem;
+}
+
+.last-box__heading-tertiary {
+  font-family: 'Courgette-Regular';
+  font-size: 2rem;
+}
+
+.last-box__list {
   text-align: left;
-  padding: 2rem;
   color: inherit;
 }
 
-.description-last-box__item {
+.last-box__item {
   margin: 1rem 0;
   color: inherit;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.last-box__item::after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #444;
+}
+
+.contact {
+  margin: 10rem 0;
+  text-align: left;
+}
+
+.contact__heading-tertiary {
+  font-family: 'Lato-Bold';
+  color: #444;
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.contact__heading-tertiary::after {
+  content: '';
+  background-color: black;
+  width: 20%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.book__form {
+  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

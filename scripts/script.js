@@ -6,7 +6,6 @@ const navigationLinks = document.querySelectorAll('.navigation__link');
 
 
 const handleCLick = () => {
-    console.log('siema')
     hamburger.classList.toggle('hamburger--active');
     nav.classList.toggle('navigation--active');
     fullName.classList.toggle('header__full-name--active')

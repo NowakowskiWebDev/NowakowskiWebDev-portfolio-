@@ -1,0 +1,27 @@
+.contact {
+    margin: 10rem 0;
+    text-align: left;
+
+    &__heading-tertiary {
+        font-family: 'Lato-Bold';
+        color: #444;
+        font-size: 2rem;
+        margin-bottom: 3.5rem;
+        padding-bottom: 2rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            background-color: black;
+            width: 20%;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+.book__form {
+    padding: 2rem;
+}
