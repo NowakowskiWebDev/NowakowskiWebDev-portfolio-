@@ -39,10 +39,6 @@
             outline: none;
             box-shadow: 0 0 .5rem rgba($color-black, .1)
         }
-
-        &::-webkit-input-placeholder {
-            color: inherit;
-        }
     }
 
     &__textarea {

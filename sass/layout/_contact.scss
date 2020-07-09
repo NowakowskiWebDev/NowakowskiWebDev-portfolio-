@@ -1,10 +1,10 @@
 .contact {
-    margin: 10rem 0;
+    margin: 10rem 0 5rem;
     text-align: left;
 
     &__heading-tertiary {
         font-family: 'Lato-Bold';
-        color: #444;
+        color: $color-gray-444;
         font-size: 2rem;
         margin-bottom: 3.5rem;
         padding-bottom: 2rem;
@@ -12,7 +12,7 @@
 
         &::after {
             content: '';
-            background-color: black;
+            background-color: $color-black;
             width: 20%;
             height: 1px;
             position: absolute;

@@ -1,0 +1,39 @@
+.footer {
+    text-align: center;
+    background-color: $color-primary;
+    color: white;
+
+    &__wave {
+        background-color: white;
+    }
+
+    &__paragraph {
+        font-family: 'Pacifico-Regular';
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    &__social {
+
+        &-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        &-item {
+            margin-bottom: 1rem;
+        }
+
+        &-link {
+            font-size: 3.5rem;
+            color: rgba($color-white, .5);
+        }
+    }
+
+    &__copy {
+        font-family: 'Lato-Regular';
+        padding-bottom: .5rem;
+    }
+}

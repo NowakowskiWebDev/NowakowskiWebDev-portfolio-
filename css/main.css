@@ -283,9 +283,9 @@ html {
 }
 
 .navigation__link {
-  padding: 2rem 3rem;
+  padding: 1.5rem 2.5rem;
   background: #fff;
-  font-size: 2rem;
+  font-size: 1.8rem;
   border-radius: 30px;
   color: #333;
   font-family: 'Lato-Bold';
@@ -446,10 +446,6 @@ html {
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
 
-.form__input::-webkit-input-placeholder {
-  color: inherit;
-}
-
 .form__textarea:focus {
   outline: none;
 }
@@ -598,6 +594,7 @@ html {
   padding: 1rem;
   position: relative;
   height: 5rem;
+  margin-bottom: 2rem;
 }
 
 .about-me__background-box .background {
@@ -704,7 +701,7 @@ html {
   display: inline-block;
   position: relative;
   background-color: #FFFDE1;
-  z-index: 10;
+  z-index: 2;
   border: 1px solid #777;
   padding: .5rem 1rem;
   font-family: 'Lato-Bold';
@@ -719,7 +716,7 @@ html {
   width: 45%;
   height: 5px;
   background-color: #FFFDE1;
-  z-index: 10;
+  z-index: 1;
 }
 
 .projects__heading-secondary::before {
@@ -731,7 +728,7 @@ html {
   width: 45%;
   height: 5px;
   background-color: #FFFDE1;
-  z-index: 100;
+  z-index: 1;
 }
 
 .projects__box-img {
@@ -814,7 +811,7 @@ html {
 }
 
 .contact {
-  margin: 10rem 0;
+  margin: 10rem 0 5rem;
   text-align: left;
 }
 
@@ -829,7 +826,7 @@ html {
 
 .contact__heading-tertiary::after {
   content: '';
-  background-color: black;
+  background-color: #000;
   width: 20%;
   height: 1px;
   position: absolute;
@@ -839,5 +836,50 @@ html {
 
 .book__form {
   padding: 2rem;
+}
+
+.footer {
+  text-align: center;
+  background-color: #0E6BA8;
+  color: white;
+}
+
+.footer__wave {
+  background-color: white;
+}
+
+.footer__paragraph {
+  font-family: 'Pacifico-Regular';
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social-item {
+  margin-bottom: 1rem;
+}
+
+.footer__social-link {
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__copy {
+  font-family: 'Lato-Regular';
+  padding-bottom: .5rem;
 }
 /*# sourceMappingURL=main.css.map */

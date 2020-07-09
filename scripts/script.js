@@ -1,7 +1,7 @@
 // Hamburger script
-const hamburger = document.querySelector('#hamburger');
-const nav = document.querySelector('#navigation');
-const fullName = document.querySelector('#fullName');
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.navigation');
+const fullName = document.querySelector('.header__full-name');
 const navigationLinks = document.querySelectorAll('.navigation__link');
 
 
@@ -92,7 +92,6 @@ window.addEventListener('scroll', debounce(checkSlide));
 // Scroll function
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function () {
-        console.log(smoothScroll)
         smoothScroll.scrollTo(this.getAttribute('href'), 1000);
     });
 });
