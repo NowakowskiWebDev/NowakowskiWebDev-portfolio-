@@ -120,74 +120,275 @@
 
     // ABOUT-ME ---------------------------------------
     .about-me {
-        padding: 2rem 4rem 4rem;
-        display: block; // !!!
-        position: relative;
-        overflow: hidden;
-        height: 95vh; // !!!
+        margin-top: 2rem;
+        display: block;
+        height: 100vh;
 
         &__text-box {
-            letter-spacing: 1px;
-            line-height: 180%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
         }
 
-        &__background-box {
-            text-align: center;
-            width: 12rem;
-            // BORDER
-            border: 3px solid $color-gray-dark-3;
-            padding: 1rem;
-            position: relative;
-            height: 5rem;
+        .hello {
             margin-bottom: 2rem;
 
-            // MOVE BACKGROUND
-            .background {
-                width: 100%;
-                height: 5.5rem;
-                background-color: $color-primary;
-                position: absolute;
-                top: 3px;
-                left: 5px;
-                z-index: -1;
-                // color: $color-primary-dark;
+            &__text {
+                padding: 1.2rem 1.8rem;
+                font-size: 2.2rem;
+
+                &::before {
+                    border: 3px solid $color-gray-dark-3;
+                }
             }
         }
 
         &__text {
-            display: block;
-            margin: 2rem 0;
-            font-size: 1.8rem;
-
-            color: $color-gray-dark-3;
-
-            &:nth-child(n + 1):not(.about-me__text:first-child) {
-                margin: 0 0 2rem;
-            }
-
-            &--background {
-                margin: 0;
-                font-size: 3rem; //!!!
-                font-family: 'Lato-Bold';
-                color: $color-white;
-            }
+            margin: 0 10rem;
+            font-size: 2rem;
+            margin-bottom: 2rem;
         }
 
         &__stack-box {
-            text-align: center;
+            margin: 0 10rem;
         }
 
         &___heading-tertiary {
-            font-size: 2rem;
-            padding: 2rem 0 1rem;
-            font-family: 'Courgette-Regular';
-            border-top: 2px dashed $color-primary-dark;
+            padding: 2rem 0 2rem;
+        }
+    }
+
+    // PROJECTS ---------------------------------------
+    .projects {
+        // min-height: 100vh;
+        // padding: 7rem 0 5rem;
+        // text-align: center;
+        // background-color: $color-beige-background;
+        // position: relative;
+        // color: $color-gray-444;
+
+        // &__box {
+        //     text-align: center;
+        //     margin: 0 0 7rem;
+        // }
+
+        // &__img {
+        //     width: 100%;
+        //     height: auto;
+        //     display: block;
+        //     margin: 0;
+        //     padding: 0;
+        // }
+
+        // &__wave {
+        //     height: auto;
+        //     width: 100%;
+        //     position: absolute;
+        //     top: 100%;
+        //     left: 0;
+        //     z-index: -100;
+        // }
+
+        &__heading {
+
+            // &-box {
+            //     width: 100%;
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     padding-top: .5rem;
+
+            //     &::after {
+            //         content: '';
+            //         width: 100%;
+            //         height: 50%;
+            //         z-index: 1;
+            //         position: absolute;
+            //         top: 25%;
+            //         transform: translateY(-50%);
+            //         left: 0;
+            //         background-color: white;
+
+            //     }
+            // }
+
+            &-secondary {
+                font-size: 2.5rem; //!!!
+                // color: inherit;
+                // display: inline-block;
+                // position: relative;
+                // background-color: $color-beige-background;
+                // z-index: 2;
+                border: 2px solid $color-gray-dark; //!!!
+                // padding: .5rem 1rem;
+                // font-family: 'Lato-Bold';
+
+                &::after {
+                    // content: '';
+                    // display: inline-block;
+                    // position: absolute;
+                    top: -3px; //!!!
+                    // left: 5%;
+                    // width: 45%;
+                    // height: 5px;
+                    // background-color: $color-beige-background;
+                    // z-index: 1;
+                }
+
+                &::before {
+                    // content: '';
+                    // display: inline-block;
+                    // position: absolute;
+                    bottom: -3px; //!!!
+                    // right: 5%;
+                    // width: 45%;
+                    // height: 5px;
+                    // background-color: $color-beige-background;
+                    // z-index: 1;
+                }
+            }
         }
 
-        &__stack {
-            display: block;
-            color: $color-primary-dark;
+
+    }
+
+    .projects__box-img {
+        // position: relative;
+
+        .box-img__heading-tertiary {
+            // font-family: 'Lato-Bold';
+            // color: $color-black;
+            // position: absolute;
+            // left: 0;
+            // top: 0;
+            // background-color: rgba(255, 255, 255, .4);
+            // border-radius: 0 0 10px 0;
+            padding: .5rem .8rem; //!!!
+            font-size: 1.8rem; //!!!
+        }
+    }
+
+    .description-box {
+        // display: grid;
+        // grid-template: 1fr / repeat(2, 1fr);
+        // align-items: center;
+        // justify-items: center;
+
+        &__paragraph {
+            font-size: 1.4rem; //!!!
+            // margin: .5rem 0 1rem;
+            // font-family: 'Lato-Regular';
+            // color: inherit;
+            // grid-column: 1 / -1;
+        }
+
+        &__link {
+            // border: none;
+            // display: inline-block;
+            // padding: .5rem .5rem;
+            // color: inherit;
+            font-size: 1.8rem; //!!!
+            // border-bottom: 1px solid black;
+        }
+    }
+
+    .last-box {
+
+        &__item {
+
+            &::after {
+                width: 10%;
+            }
+        }
+    }
+
+    // CONTACT ---------------------------------------
+    .contact {
+        margin: 15rem 0 5rem;
+
+        &__heading-tertiary {
+            font-size: 2.2rem;
+            margin-left: 4rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    // FORM
+    .form {
+        display: grid;
+        grid-template-areas:
+            ". input-name input-email ."
+            ". textarea textarea ."
+            ". btn btn .";
+
+        &__group {
+            display: inline-block;
+            width: 90%;
+            align-self: stretch;
+            justify-self: center;
+
+            &--name {
+                grid-area: input-name;
+                justify-self: start;
+            }
+
+            &--email {
+                grid-area: input-email;
+                justify-self: start;
+            }
+
+            &--textarea {
+                grid-area: textarea;
+                width: 100%;
+            }
+
+            &--btn {
+                grid-area: btn;
+                width: 25%;
+                justify-self: start;
+            }
+        }
+    }
+
+    // FOOTER ---------------------------------------
+    .footer {
+        text-align: center;
+        background-color: $color-primary;
+        color: $color-white;
+
+        &__wave {
+            background-color: $color-white;
+        }
+
+        &__paragraph {
+            font-family: 'Pacifico-Regular';
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+
+        &__social {
+
+            &-list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                margin-bottom: 3rem;
+            }
+
+
+
+            &-link {
+                font-size: 4.5rem;
+                color: rgba($color-white, .5);
+            }
+        }
+
+        &__copy {
             font-family: 'Lato-Bold';
+            padding-bottom: 2rem;
         }
     }
 }

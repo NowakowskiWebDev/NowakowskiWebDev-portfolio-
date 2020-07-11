@@ -23,7 +23,6 @@
             </span>
         </button>
         <nav class="navigation" id="navigation">
-            <!-- <div class="navigation__box"> -->
             <ul class="navigation__list">
                 <li class="navigation__item animateOnce--1">
                     <a class="navigation__link ripple" href="#about-me">O mnie</a></li>
@@ -32,7 +31,6 @@
                 <li class="navigation__item animateOnce--3">
                     <a class="navigation__link ripple" href="#contact">Kontakt</a></li>
             </ul>
-            <!-- </div> -->
         </nav>
         <div class="header__text-box">
             <h1 class="heading">
@@ -121,9 +119,8 @@
             </div>
             <div class="slide-in projects__box third-projects">
                 <div class="projects__box-img">
-                    <h3 class="box-img__heading-tertiary">Portfolio</h3>
                     <img loading="lazy" class="projects__img"
-                        srcset="img/underConstructions-640.png 640w, img/underConstructions-1280.png 1280w, img/underConstructions-1920.png 1920w"
+                        srcset="img/portfolio-640.jpg 640w, img/portfolio-1280.jpg 1280w, img/portfolio-1662.jpg 1920w"
                         sizes="(max-width: 600px) 600px, (max-width: 1200px) 900px, (max-width: 1800px) 1200px"
                         alt="Strona w budowie">
                 </div>
@@ -156,20 +153,20 @@
             <div class="book__form">
                 <h3 class="contact__heading-tertiary">Zapraszam do kontaktu</h3>
                 <form action="#" class="form">
-                    <div class="form__group">
+                    <div class="form__group form__group--name">
                         <input id="name" type="text" class="form__input" placeholder="Imię i nazwisko">
                         <label class="form__label" for="name">Imię i nazwisko</label>
                     </div>
-                    <div class="form__group">
+                    <div class="form__group form__group--email">
                         <input id="name" type="email" class="form__input" placeholder="Email">
                         <label class="form__label" for="email">Email</label>
                     </div>
-                    <div class="form__group">
+                    <div class="form__group form__group--textarea">
                         <textarea class="form__textarea" id="textarea" rows="5" cols="20"
                             placeholder="Wiadomość..."></textarea>
                         <label class="form__label" for="textarea">Wiadomość</label>
                     </div>
-                    <div class="form__group">
+                    <div class="form__group form__group--btn">
                         <button type="submit" class="btn btn--form">Wyślij!</button>
                     </div>
                 </form>

@@ -1,10 +1,10 @@
 .footer {
     text-align: center;
     background-color: $color-primary;
-    color: white;
+    color: $color-white;
 
     &__wave {
-        background-color: white;
+        background-color: $color-white;
     }
 
     &__paragraph {
@@ -20,11 +20,10 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-        }
-
-        &-item {
             margin-bottom: 1rem;
         }
+
+
 
         &-link {
             font-size: 3.5rem;
