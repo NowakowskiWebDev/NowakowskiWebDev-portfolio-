@@ -1,7 +1,7 @@
 %elementStyle {
     font-size: 1.4rem;
     padding: 1.5rem 2rem;
-    border: 1px solid #e6e6e6;
+    border: 1px solid $color-gray-light;
     width: 100%;
     color: $color-gray-444;
 }
@@ -65,4 +65,13 @@
             color: $color-white;
         }
     }
+
+
+    @media only screen and (min-width: 400px) {
+        &__group {
+            margin: 0 auto;
+            width: 70%;
+        }
+    }
+
 }

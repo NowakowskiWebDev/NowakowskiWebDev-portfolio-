@@ -62,7 +62,11 @@ function checkSlide() {
 window.addEventListener('scroll', debounce(checkSlide));
 
 
-
+// Function to fix problems with hoover on touch screen devices
+if (!("ontouchstart" in document.documentElement)) {
+    console.log('siema')
+    document.documentElement.className += "no-touch";
+}
 
 
 
