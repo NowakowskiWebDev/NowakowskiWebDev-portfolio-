@@ -9,28 +9,54 @@
         line-height: 180%;
     }
 
-    &__background-box {
-        text-align: center;
-        width: 10rem;
-        // BORDER
-        border: 2px solid $color-gray-dark-3;
-        padding: 1rem;
+    .hello {
+        margin-top: 2rem;
+        background-color: $color-primary;
+        display: inline-block;
         position: relative;
-        height: 5rem;
-        margin-bottom: 2rem;
 
-        // MOVE BACKGROUND
-        .background {
-            width: 100%;
-            height: 5rem;
-            background-color: $color-primary;
-            position: absolute;
-            top: 8px;
-            left: 8px;
-            z-index: -1;
-            color: $color-primary-dark;
+        &__text {
+            padding: 1rem 1.5rem;
+            color: $color-white;
+            font-size: 2rem;
+            font-family: 'Lato-Bold';
+
+            &::before {
+                content: '';
+                height: 100%;
+                width: 100%;
+                padding: 1re 1.5rem;
+                border: 2px solid $color-gray-dark-3;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-6px, -6px);
+            }
         }
     }
+
+    // &__background-box {
+    //     text-align: center;
+    //     width: 10rem;
+    //     // BORDER
+    //     border: 2px solid $color-gray-dark-3;
+    //     padding: 1rem;
+    //     position: relative;
+    //     height: 5rem;
+    //     margin-bottom: 2rem;
+
+    //     // MOVE BACKGROUND
+    //     .background {
+    //         width: 100%;
+    //         height: 5rem;
+    //         background-color: $color-primary;
+    //         position: absolute;
+    //         top: 8px;
+    //         left: 8px;
+    //         z-index: -1;
+    //         color: $color-primary-dark;
+    //     }
+    // }
 
     &__text {
         display: block;
@@ -43,12 +69,12 @@
             margin: 0 0 2rem;
         }
 
-        &--background {
-            margin: 0;
-            font-size: 2rem;
-            font-family: 'Lato-Bold';
-            color: $color-white;
-        }
+        // &--background {
+        //     margin: 0;
+        //     font-size: 2rem;
+        //     font-family: 'Lato-Bold';
+        //     color: black;
+        // }
     }
 
     &__stack-box {

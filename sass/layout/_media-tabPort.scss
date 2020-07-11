@@ -1,4 +1,6 @@
 @include respond(tab-port) {
+
+    // HEADER ---------------------------------------
     .header {
         position: relative;
 
@@ -113,6 +115,79 @@
         &--active &__item:nth-child(3) {
             opacity: 1;
             animation: jumpToUp 1s 1.6s linear forwards 1;
+        }
+    }
+
+    // ABOUT-ME ---------------------------------------
+    .about-me {
+        padding: 2rem 4rem 4rem;
+        display: block; // !!!
+        position: relative;
+        overflow: hidden;
+        height: 95vh; // !!!
+
+        &__text-box {
+            letter-spacing: 1px;
+            line-height: 180%;
+        }
+
+        &__background-box {
+            text-align: center;
+            width: 12rem;
+            // BORDER
+            border: 3px solid $color-gray-dark-3;
+            padding: 1rem;
+            position: relative;
+            height: 5rem;
+            margin-bottom: 2rem;
+
+            // MOVE BACKGROUND
+            .background {
+                width: 100%;
+                height: 5.5rem;
+                background-color: $color-primary;
+                position: absolute;
+                top: 3px;
+                left: 5px;
+                z-index: -1;
+                // color: $color-primary-dark;
+            }
+        }
+
+        &__text {
+            display: block;
+            margin: 2rem 0;
+            font-size: 1.8rem;
+
+            color: $color-gray-dark-3;
+
+            &:nth-child(n + 1):not(.about-me__text:first-child) {
+                margin: 0 0 2rem;
+            }
+
+            &--background {
+                margin: 0;
+                font-size: 3rem; //!!!
+                font-family: 'Lato-Bold';
+                color: $color-white;
+            }
+        }
+
+        &__stack-box {
+            text-align: center;
+        }
+
+        &___heading-tertiary {
+            font-size: 2rem;
+            padding: 2rem 0 1rem;
+            font-family: 'Courgette-Regular';
+            border-top: 2px dashed $color-primary-dark;
+        }
+
+        &__stack {
+            display: block;
+            color: $color-primary-dark;
+            font-family: 'Lato-Bold';
         }
     }
 }

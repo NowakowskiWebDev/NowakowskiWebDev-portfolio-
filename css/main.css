@@ -628,25 +628,31 @@ html {
   line-height: 180%;
 }
 
-.about-me__background-box {
-  text-align: center;
-  width: 10rem;
-  border: 2px solid #333;
-  padding: 1rem;
+.about-me .hello {
+  margin-top: 2rem;
+  background-color: #0E6BA8;
+  display: inline-block;
   position: relative;
-  height: 5rem;
-  margin-bottom: 2rem;
 }
 
-.about-me__background-box .background {
+.about-me .hello__text {
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Lato-Bold';
+}
+
+.about-me .hello__text::before {
+  content: '';
+  height: 100%;
   width: 100%;
-  height: 5rem;
-  background-color: #0E6BA8;
+  padding: 1re 1.5rem;
+  border: 2px solid #333;
   position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: -1;
-  color: #0A2472;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-6px, -6px);
+          transform: translate(-6px, -6px);
 }
 
 .about-me__text {
@@ -658,13 +664,6 @@ html {
 
 .about-me__text:nth-child(n + 1):not(.about-me__text:first-child) {
   margin: 0 0 2rem;
-}
-
-.about-me__text--background {
-  margin: 0;
-  font-size: 2rem;
-  font-family: 'Lato-Bold';
-  color: #fff;
 }
 
 .about-me__stack-box {
@@ -990,6 +989,64 @@ html {
     opacity: 1;
     -webkit-animation: jumpToUp 1s 1.6s linear forwards 1;
             animation: jumpToUp 1s 1.6s linear forwards 1;
+  }
+  .about-me {
+    padding: 2rem 4rem 4rem;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 95vh;
+  }
+  .about-me__text-box {
+    letter-spacing: 1px;
+    line-height: 180%;
+  }
+  .about-me__background-box {
+    text-align: center;
+    width: 12rem;
+    border: 3px solid #333;
+    padding: 1rem;
+    position: relative;
+    height: 5rem;
+    margin-bottom: 2rem;
+  }
+  .about-me__background-box .background {
+    width: 100%;
+    height: 5.5rem;
+    background-color: #0E6BA8;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    z-index: -1;
+  }
+  .about-me__text {
+    display: block;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  .about-me__text:nth-child(n + 1):not(.about-me__text:first-child) {
+    margin: 0 0 2rem;
+  }
+  .about-me__text--background {
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Lato-Bold';
+    color: #fff;
+  }
+  .about-me__stack-box {
+    text-align: center;
+  }
+  .about-me___heading-tertiary {
+    font-size: 2rem;
+    padding: 2rem 0 1rem;
+    font-family: 'Courgette-Regular';
+    border-top: 2px dashed #0A2472;
+  }
+  .about-me__stack {
+    display: block;
+    color: #0A2472;
+    font-family: 'Lato-Bold';
   }
 }
 /*# sourceMappingURL=main.css.map */
