@@ -973,7 +973,7 @@ html {
   .navigation__item {
     opacity: 1;
     margin: 0;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
   }
   .navigation__item.animateOnce--1 {
     opacity: 0;
@@ -1027,7 +1027,6 @@ html {
             animation: jumpToUp 1s 1.6s linear forwards 1;
   }
   .about-me {
-    margin-top: 2rem;
     display: block;
     height: 100vh;
   }
@@ -1057,7 +1056,7 @@ html {
     border: 3px solid #333;
   }
   .about-me__text {
-    margin: 0 10rem;
+    margin: 0 2rem;
     font-size: 2rem;
     margin-bottom: 2rem;
   }
@@ -1068,7 +1067,6 @@ html {
     padding: 2rem 0 2rem;
   }
   .projects__heading-secondary {
-    font-size: 2.5rem;
     border: 2px solid #777;
   }
   .projects__heading-secondary::after {
@@ -1142,37 +1140,11 @@ html {
     -ms-grid-column-align: start;
         justify-self: start;
   }
-  .footer {
-    text-align: center;
-    background-color: #0E6BA8;
-    color: #fff;
-  }
-  .footer__wave {
-    background-color: #fff;
-  }
-  .footer__paragraph {
-    font-family: 'Pacifico-Regular';
-    font-size: 2rem;
-    margin: 1rem 0;
-  }
   .footer__social-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-bottom: 3rem;
   }
   .footer__social-link {
     font-size: 4.5rem;
-    color: rgba(255, 255, 255, 0.5);
   }
   .footer__copy {
     font-family: 'Lato-Bold';
