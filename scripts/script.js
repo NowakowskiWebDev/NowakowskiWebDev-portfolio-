@@ -4,7 +4,6 @@ const nav = document.querySelector('.navigation');
 const fullName = document.querySelector('.header__full-name');
 const navigationLinks = document.querySelectorAll('.navigation__link');
 
-
 const handleCLick = () => {
     hamburger.classList.toggle('hamburger--active');
     nav.classList.toggle('navigation--active');
@@ -58,39 +57,7 @@ function checkSlide() {
     });
 }
 
-
 window.addEventListener('scroll', debounce(checkSlide));
-
-
-// Function to fix problems with hoover on touch screen devices
-if (!("ontouchstart" in document.documentElement)) {
-    console.log('siema')
-    document.documentElement.className += "no-touch";
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Scroll function
@@ -99,9 +66,6 @@ document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         smoothScroll.scrollTo(this.getAttribute('href'), 1000);
     });
 });
-
-
-
 
 ! function (i) {
     "use strict";

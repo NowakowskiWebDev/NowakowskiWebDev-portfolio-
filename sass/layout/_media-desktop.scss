@@ -1,1 +1,15 @@
-@include respond(desktop) {}
+@include respond(desktop) {
+
+    // HEADER -----------------------
+    .projects {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    // CONTACT -----------------------
+    .contact {
+        &__heading-tertiary {
+            margin-left: 10rem;
+        }
+    }
+}
