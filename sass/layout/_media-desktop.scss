@@ -1,5 +1,29 @@
 @include respond(desktop) {
 
+    // ABOUT-ME -----------------------
+    .about-me {
+
+        .hello {
+            margin-left: 10rem;
+        }
+
+        &__text {
+            padding: 0 10%;
+        }
+
+        &__stack-box {
+            padding: 0 20%;
+        }
+
+        &__shape {
+            width: 600px;
+            height: 600px;
+            top: 5%;
+            right: -15%;
+        }
+    }
+
+
     // HEADER -----------------------
     .projects {
         width: 70%;

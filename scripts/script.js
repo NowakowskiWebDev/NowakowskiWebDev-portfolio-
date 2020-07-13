@@ -3,6 +3,8 @@ const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('.navigation');
 const fullName = document.querySelector('.header__full-name');
 const navigationLinks = document.querySelectorAll('.navigation__link');
+const main = document.querySelector('.main');
+const arrowFixed = document.querySelector('.arrow-fixed');
 
 const handleCLick = () => {
     hamburger.classList.toggle('hamburger--active');
@@ -59,6 +61,27 @@ function checkSlide() {
 
 window.addEventListener('scroll', debounce(checkSlide));
 
+// arrow fixed function
+let flag = true;
+
+function checkArrow() {
+    const topMain = main.getBoundingClientRect().top;
+    if (topMain <= 0 && flag) {
+        arrowFixed.classList.add('visible');
+    } else {
+        if (topMain > 0) flag = true;
+        arrowFixed.classList.remove('visible');
+    }
+}
+
+function clickArrow() {
+    arrowFixed.classList.remove('visible');
+    flag = false;
+}
+
+
+window.addEventListener('scroll', debounce(checkArrow))
+arrowFixed.addEventListener('click', clickArrow);
 
 // Scroll function
 document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {

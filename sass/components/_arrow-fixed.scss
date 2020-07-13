@@ -1,0 +1,27 @@
+.arrow-fixed {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 2;
+    transform: rotate(180deg);
+    transform-origin: center;
+    background-color: $color-primary-dark;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    animation: arrowFixed .5s linear forwards 1;
+}
+
+.arrow-fixed__path {
+    height: 3rem;
+    width: 3rem;
+    transform: translateY(-10%);
+}
+
+.arrow-fixed {
+    display: none;
+}
+
+.arrow-fixed.visible {
+    @include flexCenter;
+}

@@ -1,5 +1,17 @@
 @include respond(tab-port) {
 
+    // ARROW FIXED ---------------------------------------
+    .arrow-fixed {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .arrow-fixed__path {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+
     // HEADER ---------------------------------------
     .header {
         position: relative;
@@ -118,7 +130,7 @@
         }
     }
 
-    // ABOUT-ME ---------------------------------------
+    // ABOUT-ME ---------------------------------------    
     .about-me {
         display: block;
 
@@ -260,10 +272,12 @@
 
             &-list {
                 margin-bottom: 3rem;
+                justify-content: space-around;
             }
 
             &-link {
                 font-size: 4.5rem;
+                margin: 0;
             }
         }
 

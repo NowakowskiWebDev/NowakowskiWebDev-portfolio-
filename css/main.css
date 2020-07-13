@@ -221,6 +221,24 @@ MEDIA QUERY
   }
 }
 
+@-webkit-keyframes arrowFixed {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrowFixed {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -494,6 +512,46 @@ html {
   opacity: 1;
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
+}
+
+.arrow-fixed {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 2;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-color: #0A2472;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  -webkit-animation: arrowFixed .5s linear forwards 1;
+          animation: arrowFixed .5s linear forwards 1;
+}
+
+.arrow-fixed__path {
+  height: 3rem;
+  width: 3rem;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.arrow-fixed {
+  display: none;
+}
+
+.arrow-fixed.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
@@ -903,8 +961,9 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -914,6 +973,7 @@ html {
 .footer__social-link {
   font-size: 3.5rem;
   color: rgba(255, 255, 255, 0.5);
+  margin: 0 2.5rem;
 }
 
 .footer__copy {
@@ -922,6 +982,14 @@ html {
 }
 
 @media only screen and (min-width: 37.5em) {
+  .arrow-fixed {
+    height: 5rem;
+    width: 5rem;
+  }
+  .arrow-fixed__path {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
   .header {
     position: relative;
   }
@@ -1142,9 +1210,12 @@ html {
   }
   .footer__social-list {
     margin-bottom: 3rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .footer__social-link {
     font-size: 4.5rem;
+    margin: 0;
   }
   .footer__copy {
     font-family: 'Lato-Bold';
@@ -1324,6 +1395,21 @@ html {
 }
 
 @media only screen and (min-width: 75em) {
+  .about-me .hello {
+    margin-left: 10rem;
+  }
+  .about-me__text {
+    padding: 0 10%;
+  }
+  .about-me__stack-box {
+    padding: 0 20%;
+  }
+  .about-me__shape {
+    width: 600px;
+    height: 600px;
+    top: 5%;
+    right: -15%;
+  }
   .projects {
     width: 70%;
     margin: 0 auto;
