@@ -169,22 +169,24 @@
         <section class="contact" id="contact">
             <div class="book__form">
                 <h3 class="contact__heading-tertiary">Zapraszam do kontaktu</h3>
-                <form action="#" class="form" name="contact" method="POST" data-netlify="true">
+                <form netlify-honeypot="bot-field" action="#" class="form" name="contact" method="POST">
                     <div class="form__group form__group--name">
-                        <input id="name" name="name" type="text" class="form__input" placeholder="Imię i nazwisko">
+                        <input required="required" id="name" name="name" type="text" class="form__input"
+                            placeholder="Imię i nazwisko">
                         <label class="form__label" for="name">Imię i nazwisko</label>
                     </div>
                     <div class="form__group form__group--email">
-                        <input id="email" name="email" type="email" class="form__input" placeholder="Email">
+                        <input required="required" id="email" name="email" type="email" class="form__input"
+                            placeholder="Email">
                         <label class="form__label" for="email">Email</label>
                     </div>
                     <div class="form__group form__group--textarea">
-                        <textarea name="message" class="form__textarea" id="textarea" rows="5" cols="20"
-                            placeholder="Wiadomość..."></textarea>
+                        <textarea required="required" name="message" class="form__textarea" id="textarea" rows="5"
+                            cols="20" placeholder="Wiadomość..."></textarea>
                         <label class="form__label" for="textarea">Wiadomość</label>
                     </div>
                     <div class="form__group form__group--btn">
-                        <button type="submit" class="btn btn--form">Wyślij!</button>
+                        <button class="btn btn--form">Wyślij!</button>
                     </div>
                 </form>
             </div>
